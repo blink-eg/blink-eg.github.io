@@ -1,33 +1,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<base target="_blank" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="description" content="BLINK ltd. Augmented Reality company. Mansoura, Egypt." />
+<title>Blink | Augmented Reality</title>
+<link href="tools/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="tools/jquery.min.js"></script> 
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Damion' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+<script type="text/javascript" src="tools/cufon-yui.js"></script>
+<script type="text/javascript" src="tools/Abraham_Lincoln_400.font.js"></script>
+<script type="text/javascript" src="tools/Inspiration_400.font.js"></script>
+<script type="text/javascript" src="tools/Museo_Slab_100_400-Museo_Slab_700_400.font.js"></script>
+<script type="text/javascript">
+	Cufon.replace('.logo h1', {fontFamily: 'Museo Slab 100'});
+	Cufon.replace('.logo h2', {fontFamily: 'Museo Slab 100'});
+	Cufon.replace('.logo h2 span', {fontFamily: 'Abraham Lincoln'});
+	Cufon.replace('p.big_text, p.small_text', {fontFamily: 'Museo Slab 100'});
+	Cufon.replace('p.big_text strong, p.small_text strong', {fontFamily: 'Museo Slab 700'});
+	Cufon.replace('#follow', {fontFamily: 'Museo Slab 100'});
+</script>
+
 
 </head>
 <body>
-<div class="black"></div>
+<div id="transy">
+</div>
 <div id="wrapper">
-	<div id="header">
-		<img src="images/blinkLogo.png" id="blinkLogo"/>
-		<h2><strong class="sep-one"></strong>Technology for better life.<strong class="sep-two"></strong></h2>
-	</div>
-	<!-- <div id="middle">
-		<p>A relaxed and contemporary cafe bar in the centre of Palm Beach
-Opening this <span>Valentine’s - 14th Feb 2014</span></p>
-	</div> -->
-	<div id="footer">
-		<div>
-		<ul class="social">
-			<li class="facebook"><a href="www.facebook.com/blinkeg"></li>
-			<li class="twitter"><a href="www.twitter.com/blinkeg"></li>
-			<li class="youtube"><a href="www.youtube.com/blinkteam10"></li>
-		</ul>
+	<div class="logo"><h1>Blink</h1><h2><strong class="one"></strong>Technology <span>&amp;</span> Better life<strong class="two"></strong></h2></div>
+	<div class="content">
+		<p class="big_text">Check out our first app on Google Play, <strong>"Alphabets Planet"</strong> <img src="images/Alphabets Planet Icon.png" /> <strong><a href="http://goo.gl/3831F6">Download NOW</a></strong></p>
+		<div id="alphabetsPlanet">
+			<iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/D9Pn2b8xsSA?rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
+		<p class="small_text"><strong>be notified.</strong> we just need your <strong>email address</strong>.</p>
+		<iframe id="form" src="https://docs.google.com/forms/d/1Qdylj24fQagEVJSMHc7jrko4ExgbDBnAzn7RslaPhnc/viewform?embedded=true">Loading...</iframe>
+		<div class="clear"></div>
+		<h2 id="follow">Follow us</h2>
+		<ul class="social">
+			<li class="twitter"><a href="http://www.twitter.com/blinkeg"></a></li>
+			<li class="facebook"><a href="http://www.facebook.com/blinkeg"></a></li>
+			<li class="youtube"><a href="http://www.youtube.com/blinkteam10"></a></li>
+		</ul>
+		
+		
 	</div>
 </div>
 </body>
