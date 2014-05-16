@@ -19,22 +19,25 @@ color: #ffffff;
 height: 100%;
 }
 
-/* #transy{
-width: 100%;
-height: 100%;
-float: left;
-background: #08233e;
-opacity: 0.8;
-filter: alpha(opacity=80);
-position: absolute;
-z-index: -1;
-} */
+#fbWrapper{
+float:left;
+background-color:#eee;
+border:2px #00a solid;
+width:300px;
+height:65px;
+padding:5px;
+z-index:2;
+position:absolute;
+top:20px;
+left:20px;
+}
 
 #wrapper{
 width: 940px;
 margin: 0 auto;
 text-align:center;
 }
+
 
 .logo{
 width: 940px;
