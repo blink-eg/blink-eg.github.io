@@ -269,21 +269,21 @@ hr {
 #menu-wrapper {
   background-color: white;
   overflow: hidden;
-  -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
 }
 
 .logo-wrapper {
   background: url(../images/logo.png) no-repeat;
-  height: 100px;
+  height: 80px;
   background-position: 15px;
 }
 .logo-wrapper a {
   display: inline-block;
   overflow: hidden;
-  padding-left: 130px;
-  line-height: 100px;
+  padding-left: 100px;
+  line-height: 80px;
   text-transform: uppercase;
   color: #329fae;
   font-size: 32px;
@@ -301,8 +301,8 @@ hr {
   text-transform: uppercase;
   font-size: 14px;
   color: #444444;
-  line-height: 100px;
-  padding-top: 37px;
+  line-height: 80px;
+  padding-top: 26px;
 }
 .main-menu ul li.active a {
   border-top: 3px solid #329fae;
@@ -406,18 +406,25 @@ a.slider-btn {
   margin-bottom: 60px;
 }
 .heading-section h2 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 600;
   text-transform: uppercase;
   border-bottom: 1px solid #444444;
   display: inline-block;
 }
+h2#alphabetsPlanetVideoHeading{
+  font-size:23px;
+  margin-bottom:10px;
+  text-align:center;
+  font-weight:600;
+}
 .heading-section p {
   color: #444444;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 10px;
+  font-style:italic;
 }
 
 .small-text {
@@ -643,12 +650,13 @@ p#aboutUsText{
 }
 .skills-heading h3.skills-title {
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #5e5e5e;
 }
 .skills-heading .small-text {
   font-style: italic;
+  font-size:16px;
 }
 
 .progress {
@@ -669,37 +677,6 @@ p#aboutUsText{
   box-shadow: none;
 }
 
-.googlemap-wrapper {
-  height: 380px;
-  margin-bottom: 40px;
-}
-
-.map-canvas {
-  height: 380px;
-  border: 10px solid #efefef;
-}
-
-.contact-info {
-  margin-top: 40px;
-}
-
-.contact-form input {
-  width: 100%;
-  margin-bottom: 15px;
-}
-.contact-form textarea {
-  width: 100%;
-  max-width: 100%;
-  height: 120px;
-}
-.contact-form .mainBtn {
-  margin-top: 15px;
-  color: white;
-  background-color: #329fae;
-  text-transform: uppercase;
-  border: 0;
-}
-
 #go-top {
   background-color: #329fae;
   color: white;
@@ -718,3 +695,7 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
    	font-style: normal;
 }
 */
+
+body{
+  background:url("../images/pattern2.png");
+}
