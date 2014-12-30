@@ -11,6 +11,66 @@ body {
   line-height: 1;
 }
 
+div#happyNewYear{
+	width:100%;
+	height:100%;
+	z-index:1000;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:#ecf0f1;
+	padding-top:10%;
+	display:none;
+}
+
+div#wrapper{
+	display:none;
+}
+
+div#happyNewYear h1{
+	font-size:60px;
+	text-transform:uppercase;
+	font-weight:500;
+	color:#e74c3c;
+}
+
+div#happyNewYear h2{
+	font-size:100px;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#3498db;
+}
+
+div#happyNewYear p{
+	font-size:30px;
+	color:#2c3e50;
+	text-transform:none;
+	margin-top:30px;
+}
+
+div#happyNewYear p#note{
+	font-size:15px;
+	color:#666;
+	text-transform:none;
+	margin-top:70px;
+}
+
+div#happyNewYear span#H{
+	color:#d35400;
+	font-weight:700;
+}
+
+div#happyNewYear span#J{
+	color:#8e44ad;
+	font-weight:700;
+}
+
+div#happyNewYear span#A{
+	color:#16a085;
+	font-weight:700;
+}
+
 .blue {
 	color: #06C;
 }
