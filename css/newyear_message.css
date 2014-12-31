@@ -6,7 +6,7 @@ div#happyNewYear{
 	position:fixed;
 	top:0px;
 	left:0px;
-	background:#ecf0f1;
+	background-image:url("../images/snow_pattern.jpg");
 	padding-top:10%;
 	display:none;
 }
