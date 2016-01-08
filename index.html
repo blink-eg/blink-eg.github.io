@@ -1,432 +1,786 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    
     <head>
-		<base target="_blank" />
-        <meta charset="utf-8">
-        <title>Blink - Augmented Reality</title>
-        <meta name="viewport" content="width=device-width">
-		<!-- <meta property="og:description" content="Blink, a software company interested in mobile applications based on latest technologies. Augmented Reality is one of our favorite technologies. " />
-		<meta property="og:url" content="http://www.blink-eg.com" />
-		<meta property="og:title" content="Blink, Augmented Reality Innovators." />
-		<meta property="og:image" content="http://www.blink-eg.com/images/logohd.jpg" /> -->
-		<meta name="description" content="BLINK ltd. Augmented Reality company. Mansoura, Egypt." />
-		
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
-		<!-- <link rel="stylesheet" href="css/newyear_message.css"> -->
-		<link rel="icon" type="image/png" href="images/favicon.png" />
-		
-		<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-		</style>
-
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="BLINK is the leading Augmented Reality company in Egypt. You BLINK .. We Augment.">
+		<meta name="keywords" content="Augmented Reality, Egypt, Android, Mobile development, iPhone, iOS">
+		<meta name="author" content="BLINK LLC">
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="BLINK is the leading Augmented Reality company in Egypt. You BLINK .. We Augment.">
+		<meta property="og:title" content="BLINK">
+		<meta property="og:image" content="images/Company_Logo.png" />
+        <title>BLINK - Augmented Reality Solutions</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
         <![endif]-->
-
-		<!-- <div id="happyNewYear">
-			<div id="wrapper">
-				<h2>2015<h2>
-				<h1>Happy New Year</h1>
-				<p>We wish you a year full of <span id="H">Happiness</span>, <span id="J">Joy</span>, and <span id="A">Achievements</span>.</p>
-				<p id="note">Press anywhere to continue...</p>
-			</div>
-		</div> --> <!-- /#happyNewYear -->
-		
-        <div class="site-main" id="sTop">
-            <div class="site-header">
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.png">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <ul class="social-icons">
-                                <li><a href="http://www.facebook.com/blinkeg" class="fa fa-facebook"></a></li>
-                                <li><a href="http://www.twitter.com/blinkeg" class="fa fa-twitter"></a></li>
-                                <li><a href="http://www.instagram.com/blink_eg" class="fa fa-instagram"></a></li>
-                                <li><a href="http://www.linkedin.com/company/5169737" class="fa fa-linkedin"></a></li>
-                            </ul>
-                        </div> <!-- /.col-md-12 -->
-                    </div> <!-- /.row -->
-                </div> <!-- /.container -->
-                <div class="main-header">
-                    <div class="container">
-                        <div id="menu-wrapper">
-                            <div class="row">
-                                <div class="logo-wrapper col-md-4 col-sm-2 col-xs-8">
-                                    <h1>
-                                        <a href="#">BLINK</a>
-                                    </h1>
-                                </div> <!-- /.logo-wrapper -->
-                                <div class="col-md-8 col-sm-10 col-xs-4 main-menu text-right">
-                                    <ul class="menu-first hidden-sm hidden-xs">
-                                        <li class="active"><a href="#" target="_self">Home</a></li>
-                                        <li><a href="#services" target="_self">About</a></li>
-                                        <li><a href="#portfolio" target="_self">Portfolio</a></li>
-                                        <li><a href="#our-team" target="_self">Team</a></li>
-                                        <li><a href="#contact" target="_self">Contact</a></li>
-                                    </ul>
-                                    <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a>
-                                </div> <!-- /.main-menu -->
-                            </div> <!-- /.row -->
-                        </div> <!-- /#menu-wrapper -->
-                        <div class="menu-responsive hidden-md hidden-lg">
-                            <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#our-team">Team</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div> <!-- /.menu-responsive -->
-                    </div> <!-- /.container -->
-                </div> <!-- /.main-header -->
-            </div> <!-- /.site-header -->
-            <div class="site-slider">
-                <div class="slider">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide1.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                    <h2>Alphabets Planet</h2>
-                                    <p>Augmented Reality inside your nursery class [<span id="androidAppIndicator">Android Application</span>]</p>
-                                    <a href="http://goo.gl/3831F6" class="slider-btn">Download demo on Google Play</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide2.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                    <h2>Everybody loves it</h2>
-                                    <p>Augmented Reality is amazingly fun</p>
-                                    <!--<a href="#" class="slider-btn">Know more..</a>-->
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overlay"></div>
-                                <img src="images/slide3.jpg" alt="">
-                                <div class="slider-caption visible-md visible-lg">
-                                    <h2>Augmented Reality</h2>
-                                    <p>Is the very near future.</p>
-                                    <!--<a href="#" class="slider-btn">Know more..</a>-->
-                                </div>
-                            </li>
+                    <a href="#" class="brand">
+                        <img src="images/logo.png" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#NAVhome">Home</a></li>
+                            <li><a href="#NAVservice">Services</a></li>
+                            <li><a href="#NAVportfolio">Portfolio</a></li>
+                            <li><a href="#NAVabout">About</a></li>
+                            <!-- <li><a href="#NAVclients">Clients</a></li> -->
+                            <li><a href="#NAVprice">Price</a></li>
+                            <li><a href="#NAVcontact">Contact</a></li>
                         </ul>
-                    </div> <!-- /.flexslider -->
-                </div> <!-- /.slider -->
-            </div> <!-- /.site-slider -->
-        </div> <!-- /.site-main -->
-
-<hr />
-         <div class="content-section" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="heading-section col-md-12 text-center">
-                        <h2>About BLINK</h2>
-                        <p>Who we are? .. What we do?</p>
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-                <div class="row">
-					<div>
-                        <p id="aboutUsText"><strong>BLINK</strong> is a limited liability company (LLC) founded in late 2013, after winning the gold prize in "StartUp-Egypt" competition organized by <a href="http://www.injaz-egypt.org">Injaz-Egypt</a> and gaining our first seed fund. <br><br>
-						We develop <strong>Augmented Reality</strong> applications. It's a cutting-edge technology that merges the real world with computer generated content which enables a whole new possibilities in every aspect of our life. <br><br>
-						<!-- spacing for mobile viewing --><br><br>
-						</p>
-                    </div> <!-- /.col-md-8 -->
-				</div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#services --> 
-<hr />
-
-
-        <div class="content-section" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="heading-section col-md-12 text-center">
-                        <h2>Our Portfolio</h2>
-                        <p>What we have done so far</p>
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-                <div class="row">
-					<div class="col-md-5 col-sm-6">
-						<p style="font-size:16px;"><img src="images/APicon.png" alt="Alphabets Planet icon" align="left" style="width:150px;height:150px;margin-right:10px;"/>
-						<strong style="font-size:25px;">Alphabets Planet</strong><br /> our first android application for nurseries teaches Arabic & English alphabets
-						and its corresponding words in a very fun and interactive way, using Augmented Reality. The gallery in the ight side shows some pictures
-						captured while using the app inside our client nurseries <br /><br />
-						<a href="http://goo.gl/3831F6" class="slider-btn">Download demo on Google Play</a>
-						</p>
-					</div>
-					<div class="col-md-7 col-sm-6"">
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p1.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>New Street</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p1.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p2.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>Floating</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p2.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p3.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>Urban Life</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p3.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p4.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>Transport</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p4.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p5.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>Digital Age</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p5.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-						<div class="portfolio-item col-md-4 col-sm-6">
-							<div class="portfolio-thumb">
-								<img src="images/gallery/p6.jpg" alt="">
-								<div class="portfolio-overlay">
-									<!-- <h3>Horizon</h3>
-									<p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p> -->
-									<a href="images/gallery/p6.jpg" data-rel="lightbox" class="expand">
-										<i class="fa fa-search"></i>
-									</a>
-								</div> <!-- /.portfolio-overlay -->
-							</div> <!-- /.portfolio-thumb -->
-						</div> <!-- /.portfolio-item -->
-					</div>
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#portfolio -->
-<hr />
-
-
-
-        <div class="content-section" id="our-team">
-            <div class="container">
-                <div class="row">
-                    <div class="heading-section col-md-12 text-center">
-                        <h2>Our Team</h2>
-                        <p>The people behind BLINK</p>
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="team-member col-md-4 col-sm-6">
-                        <div class="member-thumb">
-                            <img src="images/member1.jpg" alt="">
-                            <div class="team-overlay">
-                                <h3>Mahmoud</h3>
-                                <span>Business Developer</span>
-                                <ul class="social">
-                                    <li><a href="http://www.facebook.com/Mahmod.3id" class="fa fa-facebook"></a></li>
-                                    <li><a href="http://www.twitter.com/Mahmod3id" class="fa fa-twitter"></a></li>
-                                    <li><a href="http://www.linkedin.com/profile/view?id=234261179" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                    <div class="team-member col-md-4 col-sm-6">
-                        <div class="member-thumb">
-                            <img src="images/member2.jpg" alt="">
-                            <div class="team-overlay">
-                                <h3>Mohamed</h3>
-                                <span>Software Developer</span>
-                                <ul class="social">
-                                    <li><a href="http://www.facebook.com/W.AA.NT.EE.D" class="fa fa-facebook"></a></li>
-                                    <li><a href="http://www.twitter.com/1V1ohammed" class="fa fa-twitter"></a></li>
-                                    <li><a href="http://www.linkedin.com/profile/view?id=178747397" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                    <div class="team-member col-md-4 col-sm-6">
-                        <div class="member-thumb">
-                            <img src="images/member3.jpg" alt="">
-                            <div class="team-overlay">
-                                <h3>Yahia</h3>
-                                <span>Software Developer</span>
-                                <ul class="social">
-                                    <li><a href="http://www.facebook.com/y.allam" class="fa fa-facebook"></a></li>
-                                    <li><a href="http://www.twitter.com/yallam00" class="fa fa-twitter"></a></li>
-                                    <li><a href="http://www.linkedin.com/profile/view?id=80109138" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="skills-heading">
-                            <h3 class="skills-title">Our products progress</h3>
-                            <p class="small-text">Is it ready or not yet?</p>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+        <div id="NAVhome">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2>Augmented Reality</h2>
+                        <!-- <h4>Cutting-edge technology, and here to stay</h4> -->
+                        <p>Is the future.</p>
+                        <!--<a href="#" class="da-link button">Read more</a>-->
+                        <div class="da-img">
+                            <img src="images/Slider02.png" width="250" alt="image02">
                         </div>
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-8 col-sm-6">
-                        <h2 id="alphabetsPlanetVideoHeading">"Alphabets Planet" promo video</h2>
-						<div id="alphabetsPlanetVideo">
-							<iframe width="100%" height="400" src="http://www.youtube.com/embed/2HntCbdl6Vw" frameborder="0" allowfullscreen></iframe>
-						</div>
-                    </div> <!-- /.col-md-8 -->
-                    <div class="col-md-4 col-sm-6" style="padding-top:35px;">
-                        <ul class="progess-bars">
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">Alphabets Planet 100%</div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+						<h2>Alphabets Planet</h2>
+                        <!--<h4>Customizable</h4>-->
+                        <p>Let your kids learn alphabets and interact with 3D objects with awesome joyful experience.</p>
+						<a href="#NAVportfolio" class="da-link button">Read more</a>
+                        <div class="da-img">
+                            <img src="images/Alphabets_Planet_Icon.png" alt="image01" width="250">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Everybody loves it</h2>
+                        <p>It adds new dimension to our reality.<br />New possibilities.</p>
+                        <!--<a href="#" class="da-link button">Read more</a>-->
+                        <div class="da-img">
+                            <img src="images/Slider03.png" width="320" alt="image03">
+                        </div>
+                    </div>
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+        </div>
+        <!-- End home section -->
+        <!-- Service section start -->
+        <div class="section primary-section" id="NAVservice">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1>What We Do?</h1>
+                    <!-- Section's title goes here -->
+                    <p>We develop <strong>Augmented Reality</strong> applications. It's a cutting-edge technology that merges the real world with computer generated content which enables a whole new possibilities in every aspect of our life.
+						In addition to modern mobile and web solutions.
+					</p>
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service1.png" alt="service 1">
+                            </div>
+                            <h3>Mobile Development</h3>
+                            <p>We Create Modern And Robust Mobile Apps Customized For Your Specific Needs.</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service main-service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service2.png" alt="service 2" />
+                            </div>
+                            <h3>Augmented Reality</h3>
+                            <p><strong>Our Favourite Technology.</strong> We Develop Different Kinds Of AR Apps And Solutions.</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service3.png" alt="service 3">
+                            </div>
+                            <h3>Web Design & Development</h3>
+                            <p>We Create Websites With Clean Design And Clean Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="NAVportfolio">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1>Have You Seen our Works?</h1>
+                    <p>Some of our own products and projects delivered for clients.</p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">All</a>
+                    </li>
+                    <li class="filter" data-filter="ar">
+                        <a href="#noAction">Augmented Reality</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#noAction">Web</a>
+                    </li>
+                    <li class="filter" data-filter="mobile">
+                        <a href="#noAction">Mobile</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="NAVsingle-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio01.png" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Alphabets Planet</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
                                 </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Skills</span>AR, Android, Unity 3D</div>
+                                    <div>
+                                        <span>Link</span><a href="http://goo.gl/3831F6">http://goo.gl/3831F6</a></div>
+                                </div>
+                                <p>Teaching Arabic and English alphabets and its corresponding vocabularies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio02.png" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>I-City Real Estate App</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>I-City</div>
+                                    <div>
+                                        <span>Skills</span>AR, Android, Unity 3D</div>
+                                    <div>
+                                        <span>Link</span><a href="http://www.youtube.com/watch?v=GFOhZjygiVY">https://www.youtube.com/watch?v=GFOhZjygiVY</a></div>
+                                </div>
+                                <p>Augmented Reality app for exploring the interior and exterior of 3D models of real estates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio03.png" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Website Almotahidoon Company</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Almotahidoon</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span><a href="http://almotahidoon.com/">http://www.almotahidoon.com/</a></div>
+                                </div>
+                                <p>Website design and development for Almotahidoon real estate company.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio04.png" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Project for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio05.png" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Website for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>We need to give each other the space to grow, to be ourselves, to exercise our diversity. We need to give each other space so that we may both give and receive such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix ar">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio01.png" alt="project 1">
+                                <a href="#NAVsingle-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Alphabets Planet</h3>
+                                <p>Educational AR Android app.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix ar">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio02.png" alt="project 2">
+                                <a href="#NAVsingle-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>I-City AR app</h3>
+                                <p>AR app for real estates.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio03.png" alt="project 3">
+                                <a href="#NAVsingle-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Almotahidoon</h3>
+                                <p>Website for a real estate company.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix mobile">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio08.png" alt="project 8">
+                                <a href="#NAVsingle-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio09.png" alt="project 9">
+                                <a href="#NAVsingle-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- About us section start -->
+        <div class="section primary-section" id="NAVabout">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1>Who We Are?</h1>
+                    <p>Our vertically and horizontally growing team.</p>
+                </div>
+                <div class="row-fluid team">
+                    <div class="span4" id="first-person">
+                        <div class="thumbnail">
+                            <img src="images/Team1.png" alt="team 1">
+                            <h3>Yahia Allam</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="http://www.facebook.com/y.allam">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com/yallam00">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/in/yallam">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Software Engineer</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/Team2.png" alt="team 2">
+                            <h3>Mahmoud Eid</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="http://www.facebook.com/Mahmod.3id">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com/Mahmod3id">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/profile/view?id=234261179">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Business Developer</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="third-person">
+                        <div class="thumbnail">
+                            <img src="images/Team3.png" alt="team 3">
+                            <h3>Mohamed Ali</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="http://www.facebook.com/W.AA.NT.EE.D">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com/1V1ohammed">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/profile/view?id=178747397">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Software Engineer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text centered">
+                    <h3>About Us</h3>
+                    <p>We're Geeks, Enthusiastics, Hard Workers.</p>
+                </div>
+                <h3>Skills</h3>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <ul class="skills">
+                            <li>
+                                <span class="bar" data-width="95%"></span>
+                                <h3>Mobile Development</h3>
                             </li>
                             <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">Numbers Planet 75%</div>
-                                </div>
+                                <span class="bar" data-width="95%"></span>
+                                <h3>Augmented Reality</h3>
                             </li>
                             <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">Shapes Planet 50%</div>
-                                </div>
+                                <span class="bar" data-width="90%"></span>
+                                <h3>Web Design</h3>
                             </li>
                             <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">Game 25%</div>
-                                </div>
+                                <span class="bar" data-width="90%"></span>
+                                <h3>Web Development</h3>
                             </li>
                         </ul>
-                    </div> <!-- /.col-md-4 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#our-team -->
-<hr />
-
-
-
-        <div class="content-section" id="contact">
+                    </div>
+                    <div class="span6">
+                        <div class="highlighted-box center">
+                            <h1>We're Hiring</h1>
+                            <p>
+								Feel free to submit your CV to our mail: 
+								<a href="mailto:contact@blink-eg.com" style="text-decoration: underline;">contact@blink-eg.com</a>. 
+								We'll get back to you when a matching opportunity is available.
+							</p>
+                            <!-- <button class="button button-sp">Join Us</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us section end -->
+        <div class="section secondary-section">
+            <div class="triangle"></div>
+            <div class="container centered">
+                <p class="large-text"><strong>Augmented Reality</strong> is the future. And it's here to stay.</p>
+				<a href="http://www.dailynewsegypt.com/2015/12/30/education-can-be-more-fun-and-more-effective/" 
+					target="_blank" class="button">
+					<strong>Daily News Egypt</strong> article about BLINK
+				</a>
+				<a href="http://technologyreview.me/%D8%A7%D9%84%D8%AD%D9%88%D8%B3%D8%A8%D8%A9/%D8%A7%D9%84%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%B9%D8%B2%D8%B2-%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A3%D9%83%D8%AB%D8%B1-%D8%AA%D8%B4%D9%88%D9%8A%D9%82%D8%A7%D9%8B/" 
+					target="_blank" class="button">
+						<strong>MIT Technology Review</strong> article about BLINK
+					</a>
+                <a href="https://en.wikipedia.org/wiki/Augmented_reality" target="_blank" class="button"><strong>Wikipedia</strong> Article</a>
+            </div>
+        </div>
+        <!-- Client section start -->
+        <div class="section third-section">
+            <div class="container centered">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Our Clients</h3>
+                        </div>
+                        <ul class="client-nav pull-right">
+                            <li id="client-prev"></li>
+                            <li id="client-next"></li>
+                        </ul>
+                    </div>
+                    <ul class="row client-slider" id="clint-slider">
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo01.png" alt="client logo 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo02.png" alt="client logo 2">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo03.png" alt="client logo 3">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo04.png" alt="client logo 4">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo05.png" alt="client logo 5">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo05.png" alt="client logo 6">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo05.png" alt="client logo 7">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Price section start -->
+        <div id="NAVprice" class="section secondary-section">
+			<div class="triangle"></div>
             <div class="container">
-                <div class="row">
-                    <div class="heading-section col-md-12 text-center">
-                        <h2>Contact Us</h2>
-                        <p>Feel free to send a message</p>
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-7 col-sm-6">
-                        <p style="font-size:16px;margin-top:30px;">If you want to order our products .. have an app to develop .. have a question .. have a suggestion .. or just want to say hi ... send us a message.
-                    	</p>
-						<br /><br />
-						<p style="">*By sending us a message, you also subscribe to our mailing list. If you don't want to subscribe, just contact us directly on our email address ( blinkteam10@gmail.com ).
-                    	</p>
-                        <!-- spacing for mobile viewing --><br><br>
-                    </div> <!-- /.col-md-7 -->
-                    <div class="col-md-5 col-sm-6">
-						<div id="mc_embed_signup">
-							<form action="http://blink-eg.us9.list-manage.com/subscribe/post?u=4ba7263106826c93244748529&amp;id=b75daa55bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div id="mc_embed_signup_scroll">
-									<h2>Send us a message & Subscribe</h2>
-									<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-									<div class="mc-field-group">
-										<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-										</label>
-										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <div class="title">
+					<img src="images/Alphabets_Planet_Icon.png" alt="Alphabets Planet App Icon" /> 
+                    <h1>
+						<strong>Alphabets Planet</strong> full version packages.
+					</h1>
+                    <p>Order your preferred package now and we'll deliver it to you anywhere in Egypt.</p>
+                </div>
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3>Basic</h3>
+                        <ul class="list">
+                            <li class="price">249 EGP</li>
+                            <li><strong>Free</strong> Shipping (Egypt)</li>
+                            <li>Suitable For <strong>Parents</strong></li>
+                            <li><strong>2</strong> Books (Ar + En) <br /><strong>3</strong> Serial Numbers</li>
+                        </ul>
+                        <button type="button" data-target="#buyingModal" data-toggle="modal" class="button button-ps">BUY</button>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Mini Pack</h3>
+                        <ul class="list">
+                            <li class="price">599 EGP <span style="text-decoration:line-through;">747 EGP</span></li>
+                            <li><strong>Free</strong> Shipping (Egypt)</li>
+                            <li>Suitable For <strong>Small Nurseries</strong></li>
+                            <li><strong>6</strong> Books (Ar + En) <br /><strong>9</strong> Serial Numbers</li>
+                        </ul>
+                        <button type="button" data-target="#buyingModal" data-toggle="modal" class="button button-ps">BUY</button>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Big Pack</h3>
+                        <ul class="list">
+                            <li class="price">999 EGP <span style="text-decoration:line-through;">1245 EGP</span></li>
+                            <li><strong>Free</strong> Shipping (Egypt)</li>
+                            <li>Suitable For <strong>Larger Nurseries</strong></li>
+                            <li><strong>10</strong> Books (Ar + En) <br /><strong>15</strong> Serial Numbers</li>
+                        </ul>
+                        <button type="button" data-target="#buyingModal" data-toggle="modal" class="button button-ps">BUY</button>
+                    </div>
+                </div>
+                <div class="centered">
+                    <p class="price-text">We Offer Custom Plans. Contact Us For More Info.</p>
+                    <a href="#NAVcontact" class="button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Price section end -->
+        <!-- Newsletter section start -->
+        <div class="section third-section">
+            <div class="container newsletter">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Newsletter</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="success-subscribe" class="alert alert-success invisible">
+                    <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
+                <div class="row-fluid">
+                    <div class="span5">
+                        <p>Subscribe to get the latest from us.</p>
+                    </div>
+                    <div class="span7">
+                        <div class="inline-form">
+                            <input type="email" name="email" id="nlmail" class="span8" placeholder="Enter your email" required />
+                            <button id="subscribe" class="button button-sp">Subscribe</button>
+                        </div>
+                        <div id="err-subscribe" class="error centered">Please provide valid email address.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter section end -->
+        <!-- Contact section start -->
+        <div id="NAVcontact" class="contact">
+            <div class="section secondary-section">
+                <div class="container">
+                    <div class="title">
+                        <h1>Contact Us</h1>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-canvas" id="map-canvas">Loading map...</div>
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="span5 contact-form centered">
+                                <h3>Say Hello</h3>
+                                <div id="successSend" class="alert alert-success invisible">
+                                    <strong>Well done!</strong>Your message has been sent.</div>
+                                <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
+                                
+								
+								<form action="http://blink-eg.us9.list-manage.com/subscribe/post?u=4ba7263106826c93244748529&amp;id=b75daa55bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div id="mc_embed_signup_scroll">
+										<div class="mc-field-group control-group">
+											<div class="controls">
+												<input type="email" value="" name="EMAIL" class="required email span12" id="mce-EMAIL" placeholder="* Your email...">
+												<div class="error left-align" id="err-EMAIL">Please enter email.</div>
+											</div>
+										</div>
+										<div class="mc-field-group control-group">
+											<div class="controls">
+												<input type="text" value="" name="FNAME" class="span12" id="mce-FNAME" placeholder="* Your name...">
+												<div class="error left-align" id="err-FNAME">Please enter name.</div>
+											</div>
+										</div>
+										<div class="mc-field-group control-group">
+											<div class="controls">
+												<textarea rows="5" cols="60" value="" name="LNAME" class="span12" id="mce-LNAME" placeholder="* Your message..."></textarea>
+												<div class="error left-align" id="err-LNAME">Please enter your message.</div>
+											</div>
+										</div>
+										<div id="mce-responses" class="clear">
+											<div class="response" id="mce-error-response" style="display:none"></div>
+											<div class="response" id="mce-success-response" style="display:none"></div>
+										</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+										<div style="position: absolute; left: -5000px;"><input type="text" name="b_4ba7263106826c93244748529_b75daa55bd" tabindex="-1" value=""></div>
+										<div class="clear"><input type="submit" value="Send message" name="subscribe" id="mc-embedded-subscribe" class="message-btn"></div>
 									</div>
-									<div class="mc-field-group">
-										<label for="mce-FNAME">Name </label>
-										<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-									</div>
-									<div class="mc-field-group">
-										<label for="mce-LNAME">Message </label>
-										<textarea rows="5" cols="60" value="" name="LNAME" class="" id="mce-LNAME"></textarea>
-									</div>
-									<div id="mce-responses" class="clear">
-										<div class="response" id="mce-error-response" style="display:none"></div>
-										<div class="response" id="mce-success-response" style="display:none"></div>
-									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									<div style="position: absolute; left: -5000px;"><input type="text" name="b_4ba7263106826c93244748529_b75daa55bd" tabindex="-1" value=""></div>
-									<div class="clear"><input type="submit" value="Send message & Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-								</div>
-							</form>
-						</div> <!--End mc_embed_signup-->
-                    </div> <!-- /.col-md-5 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#contact -->
-            
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-xs-12 text-left">
-                        Copyright © 2015 BLINK LLC | <a href="mailto:blinkteam10@gmail.com">blinkteam10@gmail.com</a>
-                    </div> <!-- /.text-center -->
-                    <div class="col-md-4 hidden-xs text-right">
-                        <a href="#top" id="go-top" target="_self">Back to top</a>
-                    </div> <!-- /.text-center -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /#footer -->
-        
-
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-		<script> 
-			$(document).ready( function(){
-				$('#happyNewYear').fadeIn(2000, function(){
-					$('#wrapper').slideDown(2000);
-				});
-			});	
-			$('#happyNewYear').click(function(){
-				$('#happyNewYear').fadeOut(600);
-			});
-		</script>
-
+								</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="span9 center contact-info">
+                        <p>14 Dr. Zakaria El-Esawy st., El-Gamaa neighborhood, Mansoura, Egypt.</p>
+                        <p class="info-mail">contact@blink-eg.com</p>
+                        <p>+20 100 970 6612</p>
+                        <p>+20 100 434 8688</p>
+                        <div class="title">
+                            <h3>We Are Social</h3>
+                        </div>
+                    </div>
+                    <div class="row-fluid centered">
+                        <ul class="social">
+                            <li>
+                                <a href="http://www.facebook.com/blinkeg">
+                                    <span class="icon-facebook-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitter.com/blinkeg">
+                                    <span class="icon-twitter-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/company/5169737">
+                                    <span class="icon-linkedin-circled"></span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="http://www.instagram.com/blink_eg">
+                                    <span class="icon-instagram-circled"></span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section edn -->
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2015 BLINK LLC.</p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+		
+		<!-- Hidden modal -->
+		<div id="buyingModal" class="modal hide fade" tabindex="-1" role="modal" aria-labelledby="buyingModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="buyingModalLabel">Buy Alphabets Planet App - Full Version</h3>
+		  </div>
+		  <div class="modal-body">
+			<p><iframe src="https://docs.google.com/forms/d/1bYNLu3PLFY8MyObPuTa-3UT3JLZu4ErT7e0MioE8woY/viewform?embedded=true" 
+				width="100%" height="360" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			</p>
+		  </div>
+		  <div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		  </div>
+		</div>
+		<!-- /Hidden Modal -->
+		
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
